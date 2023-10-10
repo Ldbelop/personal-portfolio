@@ -1,0 +1,14 @@
+.hamContainer{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.patty{
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: var(--banner-color);
+}

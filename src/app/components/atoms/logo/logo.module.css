@@ -1,0 +1,11 @@
+.img{
+    height: 37px;
+    width: 37px;
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    font-size: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
