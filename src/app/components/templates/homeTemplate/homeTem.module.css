@@ -7,7 +7,7 @@
     min-height: 100%;
 }
 
-@media screen and (max-height: 633px){
+@media screen and (max-height: 633px) and (max-width: 500px){
     .bannerContainer{
         justify-content: flex-start;
         margin-top: 77px;

@@ -11,9 +11,7 @@
 @media screen and (max-height: 660px){
     .experienceContainer{
         padding: 0;
-        margin-block: 40px;
-        min-height: none;
-        height: min-content;
+        padding-block: 40px;
         justify-content: flex-start;
     }
 }
