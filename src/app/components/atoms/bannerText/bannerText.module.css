@@ -5,6 +5,7 @@
     font-weight: 400;
     width: 80%;
     max-width: 400px;
+    min-width: 248px;
 }
 
 .bannerText > span{
