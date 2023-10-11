@@ -1,0 +1,11 @@
+.info{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    -webkit-margin-before: 20px;
+            margin-block-start: 20px;
+    -webkit-margin-after: 35px;
+            margin-block-end: 35px;
+}

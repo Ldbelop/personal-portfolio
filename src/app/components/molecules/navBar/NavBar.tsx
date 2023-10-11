@@ -1,8 +1,8 @@
 import HeaderLink from '@/app/components/atoms/headerLink'
 import styles from './navBar.module.css'
+import { makeSlug } from '@/app/services/textService'
 
 const NavBar = () => {
-    const makeSlug = (unSluggedString: string): string => unSluggedString.replace(' ', '-')
 
     const sectionList : string[] = ['Home' , 'Experience', 'About me', 'Portfolio', 'Education', 'Contact']
     const linkList: JSX.Element[] = sectionList.map((section: string, index: number): JSX.Element => {

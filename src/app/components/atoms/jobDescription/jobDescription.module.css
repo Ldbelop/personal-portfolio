@@ -1,0 +1,7 @@
+.description{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 0.21px;
+}
