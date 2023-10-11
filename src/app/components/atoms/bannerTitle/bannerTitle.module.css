@@ -13,5 +13,16 @@
         font-size: 101px;
         width: 72%;
         line-height: 105px;
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .bannerTitle{
+        font-size: 151px;
+        width: 687px;
+        max-width: none;
+        text-align: start;
+        line-height: 162px;
     }
 }
