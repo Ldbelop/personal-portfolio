@@ -7,6 +7,13 @@
     min-height: 100%;
 }
 
+@media screen and (max-height: 633px){
+    .bannerContainer{
+        justify-content: flex-start;
+        margin-top: 77px;
+    }
+}
+
 @media screen and (min-width: 1280px) {
     .bannerContainer{
         align-items: start;
