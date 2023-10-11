@@ -1,6 +1,5 @@
 .title{
     color: var(--primary-color);
-    font-family: Poppins;
     font-size: 30px;
     font-weight: 600;
     line-height: 36px;
@@ -8,3 +7,23 @@
     border-bottom: 1px solid var(--home-txt-color);
     padding-block-end: 15px;
 }
+
+.title > span{
+    display: none;
+}
+
+@media screen and (min-width: 1280px){
+    .title{
+        text-align: start;
+        border: none;
+        padding: 0;
+    }
+
+    .title > span{
+        display: inline;
+        color: var(--section-title-color);
+        font-size: 27px;
+        font-weight: 600;
+    }
+}
+

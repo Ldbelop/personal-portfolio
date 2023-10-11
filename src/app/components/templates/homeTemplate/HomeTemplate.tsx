@@ -8,7 +8,7 @@ const HomeTemplate = () => {
   return (
     <>
       <Header />
-      <section className={styles.bannerContainer}>
+      <section className={styles.bannerContainer} id='Home'>
         <BannerTitle />
         <BannerText />
       </section>

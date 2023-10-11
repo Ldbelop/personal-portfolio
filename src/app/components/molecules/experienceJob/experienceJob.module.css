@@ -1,3 +1,38 @@
 .container{
     margin-block: 50px;
+    max-width: 330px;
+}
+
+.ballContainer{
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .container{
+        position: relative;
+        max-width: none;
+        margin-block-start: 20px;
+        border-left: 3px solid var(--section-title-color);
+        padding-inline-start: 20px;
+    }
+
+    .ballContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-color);
+        padding: 10px;
+        position: absolute;
+        left: -18px;
+        right: 0;
+        width: min-content;
+    }
+
+    .ball{
+        display: block;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: var(--section-title-color);
+    }
 }

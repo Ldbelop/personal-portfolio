@@ -10,7 +10,7 @@ const ExperienceTemplate = () => {
   });
 
   return (
-    <section className={styles.experienceContainer}>
+    <section className={styles.experienceContainer} id='Experience'>
       <SectionTitle titleText={'Experience'}/>
       {jobsToRender}
     </section>

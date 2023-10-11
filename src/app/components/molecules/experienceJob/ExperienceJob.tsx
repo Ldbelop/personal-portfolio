@@ -7,8 +7,11 @@ const ExperienceJob = ({ titleText, place, textPayload, textDescription }: { tit
 
   return (
     <div className={styles.container}>
+      <div className={styles.ballContainer}>
+        <div className={styles.ball}></div>
+      </div>
       <JobTitle titleText={titleText} place={place}/>
-      <JobInfo textPayload={textPayload}/>
+      <JobInfo textPayload={textPayload} place={place}/>
       <JobDescription descText={textDescription}/>
     </div>
   )
