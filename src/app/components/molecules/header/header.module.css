@@ -1,0 +1,49 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 570px;
+}
+
+.iconContainer{
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .header{
+        max-width: 2144px;
+        min-width: 1069px;
+        padding-inline: 105px;
+        height: 81px;
+    }
+
+    .iconContainer{
+        display: flex;
+        gap: 15px;
+    }
+
+    .linkIcon{
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+
+    .linkIcon > svg{
+        height: 32px;
+        width: auto;
+    }
+
+    .linkIcon > svg{
+        color: var(--home-txt-color);
+        transition: color 200ms, height 200ms;
+    }
+
+    .linkIcon > svg:hover{
+        color: var(--banner-color);
+        height: 38px;
+    }
+}

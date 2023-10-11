@@ -1,0 +1,12 @@
+.link{
+    color: var(--home-txt-color);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 200ms, font-size 200ms;
+}
+
+.link:hover{
+    color: var(--banner-color);
+    font-size: 20px;
+}

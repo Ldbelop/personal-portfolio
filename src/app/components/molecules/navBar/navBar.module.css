@@ -1,0 +1,10 @@
+.navBar{
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .navBar{
+        display: flex;
+        gap: 40px;
+    }
+}

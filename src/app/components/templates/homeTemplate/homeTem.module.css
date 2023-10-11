@@ -1,0 +1,22 @@
+.bannerContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vw;
+}
+
+@media screen and (min-width: 1280px) {
+    .bannerContainer{
+        align-items: start;
+        max-width: 1920px;
+    }
+}
+
+@media screen and (min-height: 1080px) {
+    .bannerContainer{
+        height: min-content;
+        padding-block: 200px;
+    }
+}
