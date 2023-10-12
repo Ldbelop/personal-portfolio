@@ -5,9 +5,9 @@ import { makeSlug } from '@/app/services/textService'
 
 const HeaderLink = ({ section }: { section: string }) => {
   return (
-    <Link href={`/#${makeSlug(section)}`} className={`${inter.className} ${styles.link}`}>
+    <a href={`/#${makeSlug(section)}`} className={`${inter.className} ${styles.link}`}>
       {section}
-    </Link>
+    </a>
   )
 }
 

@@ -4,3 +4,9 @@
     font-size: 22px;
     font-weight: 400;
 }
+
+@media screen and (min-width: 1280px){
+    .title{
+        text-align: start;
+    }
+}

@@ -6,7 +6,7 @@ export const inter = Inter({
   variable: '--inter-font'
 })
 
-export const poppins = Poppins({
+export const poppinsFont = Poppins({
   weight: ['400','500','600'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
