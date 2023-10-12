@@ -7,16 +7,20 @@
     align-items: center;
 }
 
-.container > p{
+.container > div > p{
     max-width: 330px;
 }
 
-.container > p:nth-child(2){
+.mobile > p:nth-child(2){
     color: var(--primary-color);
 }
 
-.container > p:nth-child(even){
+.container > div > p:nth-child(even){
     margin-block: 50px;
+}
+
+.landscape{
+    display: none;
 }
 
 @media screen and (max-height: 660px){
@@ -31,6 +35,33 @@
     .container{
         align-items: flex-start;
         padding-inline-start: 15px;
-        max-width: 1920px;
+        max-width: 1400px;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .landscape{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .landscape > div > p:nth-child(2){
+        color: var(--primary-color);
+    }
+
+    .landscape > div > p{
+        max-width: 575px;
+    }
+
+    .landscape > div > p:nth-child(even){
+        margin-block: 30px;
+    }
+
+    .landscape > div > p:nth-child(2){
+        margin-block: 40px;
     }
 }
