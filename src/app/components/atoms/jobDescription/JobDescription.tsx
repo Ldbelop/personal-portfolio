@@ -1,9 +1,9 @@
 import styles from './jobDescription.module.css'
-import { poppins } from '@/utils/fonts'
+import { poppinsFont } from '@/utils/fonts'
 
 const JobDescription = ({ descText }: { descText: string }) => {
   return (
-    <p className={`${poppins.className} ${styles.description}`}>
+    <p className={`${poppinsFont.className} ${styles.description}`}>
       { descText }
     </p>
   )
