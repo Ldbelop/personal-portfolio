@@ -1,7 +1,7 @@
 import { makeSlug } from '@/app/services/textService'
 import styles from './sliderMenu.module.css'
 
-const sliderMenu = ({ contentList }: { contentList: any}) => {
+const SliderMenu = ({ contentList }: { contentList: any}) => {
   const contentToShow: JSX.Element = contentList.map((title: any, index: number): JSX.Element => {
     return <li className="glide__slide" key={`${makeSlug(title)}${index}`}>{title}</li>
   })
@@ -17,4 +17,4 @@ const sliderMenu = ({ contentList }: { contentList: any}) => {
   )
 }
 
-export default sliderMenu
+export default SliderMenu
