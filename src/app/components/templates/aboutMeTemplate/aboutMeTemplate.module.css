@@ -7,6 +7,18 @@
     align-items: center;
 }
 
+.container > p{
+    max-width: 330px;
+}
+
+.container > p:nth-child(2){
+    color: var(--primary-color);
+}
+
+.container > p:nth-child(even){
+    margin-block: 50px;
+}
+
 @media screen and (max-height: 660px){
     .container{
         padding: 0;

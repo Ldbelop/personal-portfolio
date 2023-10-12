@@ -5,7 +5,7 @@ import AboutImage from '@/app/components/atoms/aboutImage/AboutImage'
 
 const AboutMeTemplate = () => {
     return (
-        <section className={styles.container}>
+        <section className={styles.container} id='About-me'>
             <SectionTitle titleText={'About me'}/>
             <JobDescription descText='Nothing is built alone, improve with others'/>
             <AboutImage />
