@@ -1,8 +1,9 @@
+import { poppins } from '@/utils/fonts'
 import styles from './cardTitle.module.css'
 
-const CardTitle = () => {
+const CardTitle = ({ title }: { title: string }) => {
   return (
-    <div>CardTitle</div>
+    <h3 className={`${styles.title} ${poppins.className}`}>{title}</h3>
   )
 }
 

@@ -6,8 +6,8 @@ import CardDescription from '../cardDescription'
 
 const Card = () => {
   return (
-    <section>
-        
+    <section className={styles.container}>
+        <CardTitle title='Apocalipsis Virtual' />
     </section>
   )
 }

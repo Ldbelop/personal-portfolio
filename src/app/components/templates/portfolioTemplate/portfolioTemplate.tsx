@@ -3,6 +3,7 @@ import SectionTitle from '../../atoms/sectionTitle'
 import styles from './portfolioTemplate.module.css'
 import SubSectionTitle from '../../atoms/subSectionTitle'
 import BulletFilter from '../../atoms/bulletFilter'
+import Card from '../../atoms/card'
 
 
 const portfolioTemplate = () => {
@@ -16,6 +17,7 @@ web pages/applications.'/>
         <BulletFilter title={'Menu 1'}/>
         <BulletFilter title={'Menu 2'}/>
       </section>
+      <Card />
     </section>
   )
 }

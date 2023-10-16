@@ -1,0 +1,6 @@
+.container{
+    width: 271px;
+    border-radius: 11px;
+    background: var(--bg-color);
+    box-shadow: 0px 0px 10px -3px var(--primary-color);
+}
