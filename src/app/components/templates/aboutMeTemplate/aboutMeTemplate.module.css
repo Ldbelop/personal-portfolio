@@ -23,6 +23,12 @@
     display: none;
 }
 
+@media screen and (max-height: 991px){
+    .container{
+        justify-content: flex-start;
+    }
+}
+
 @media screen and (max-height: 660px){
     .container{
         padding: 0;
