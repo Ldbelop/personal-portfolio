@@ -9,6 +9,7 @@
   --bullet-icon-color: #C9B79E;
   --button-bg: #A58D6D;
   --button-contrast: #496A5A;
+  --bullet-inactive: #D1C2AE;
 }
 
 @media (prefers-color-scheme: dark) {
