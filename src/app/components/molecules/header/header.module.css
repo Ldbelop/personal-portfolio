@@ -13,6 +13,13 @@
     display: none;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 @media screen and (min-width: 1280px) {
     .header{
         max-width: 1595px;

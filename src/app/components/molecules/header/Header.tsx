@@ -11,7 +11,8 @@ const Header = () => {
     }
 
     return (
-        <header className={styles.header}>
+        <section className={styles.container}>
+            <header className={styles.header}>
             <Logo />
             <NavBar />
             <HamMenu />
@@ -25,7 +26,8 @@ const Header = () => {
                     <TranslateIcon />
                 </button>
             </section>
-        </header>
+            </header>
+        </section>
     )
 }
 
