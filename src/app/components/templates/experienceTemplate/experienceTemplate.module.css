@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-inline: 35px;
 }
 
 @media screen and (max-height: 660px){
