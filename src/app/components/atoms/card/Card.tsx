@@ -10,7 +10,7 @@ const Card = ({ title }: { title: string}) => {
   return (
     <>
       <section className={`${styles.container} ${styles.mobile}`}>
-          <CardImg source={'/aFEX-pitur.jpg'} altText={'Aphex Img'} width={271} height={153}/>
+          <CardImg source={'/Book-it.jpg'} altText={'Aphex Img'} width={271} height={153}/>
           <CardTitle title={title} />
           <section>
             <TechBullet text='React'/>
@@ -45,7 +45,7 @@ const Card = ({ title }: { title: string}) => {
             </section>
             <CardDescription text='Lorem ipsum dolor amet set the land is inhospitable and so we are, smaller text, lorem apsum dolor asemota sre sldkjfe kashiri goda'/>
           </div>
-          <CardImg source={'/aFEX-pitur.jpg'} altText={'Aphex Img'} width={519} height={293}/>
+          <CardImg source={'/Book-it.jpg'} altText={'Aphex Img'} width={519} height={293}/>
       </section>
     </>
   )
