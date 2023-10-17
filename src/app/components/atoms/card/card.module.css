@@ -67,5 +67,6 @@
 
     .links{
         margin-block-start: 0;
+        margin-block-end: 10px;
     }
 }

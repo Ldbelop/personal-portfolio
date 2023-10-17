@@ -11,5 +11,6 @@
         max-width: 410px;
         font-size: 20px;
         text-align: start;
+        margin-block-start: 32px;
     }
 }

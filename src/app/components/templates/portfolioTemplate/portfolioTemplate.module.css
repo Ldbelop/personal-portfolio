@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1400px;
 }
 
 .container{
@@ -47,6 +48,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .container > p{
+        margin-top: 28px;
+    }
+
     .wrapper{
         align-items: flex-start;
     }
@@ -76,6 +81,21 @@
 
     .techSection{
         flex-direction: row;
+        justify-content: space-between;
         width: 100%;
+    }
+
+    .container > h2{
+        margin-top: 90px;
+    }
+
+    .menuSection{
+        margin-block-end: 35px;
+    }
+}
+
+@media screen and (min-width: 1595px) {
+    .wrapper{
+        justify-content: center;
     }
 }
