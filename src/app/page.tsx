@@ -7,11 +7,11 @@ import PortfolioTemplate from './components/templates/portfolioTemplate'
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.globalWrapper}>
       <HomeTemplate />
       <ExperienceTemplate />
       <AboutMeTemplate />
       <PortfolioTemplate />
-    </>
+    </div>
   )
 }

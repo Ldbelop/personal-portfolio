@@ -5,18 +5,22 @@ import TechBullet from '../techBullet'
 import CardDescription from '../cardDescription'
 import CardIcon from '../cardIcon'
 import { AttachmentIcon, GithubIcon } from '../../icons/icons'
+import { makeSlug } from '@/app/services/textService'
 
-const Card = ({ title }: { title: string}) => {
+const Card = ({ title, description, techArray }: { title: string, description: string, techArray: string[] }) => {
+  const techToRender: React.ReactNode = techArray.map((tech:string, index: number): React.ReactNode => {
+    return <TechBullet key={`${makeSlug(tech)}${index}`} text={tech}/>
+  })
+
   return (
     <>
       <section className={`${styles.container} ${styles.mobile}`}>
           <CardImg source={'/Book-it.jpg'} altText={'Aphex Img'} width={271} height={153}/>
           <CardTitle title={title} />
           <section>
-            <TechBullet text='React'/>
-            <TechBullet text='Typescript'/>
+            {techToRender}
           </section>
-          <CardDescription text='Lorem ipsum dolor amet set the land is inhospitable and so we are, smaller text, lorem apsum dolor asemota sre sldkjfe kashiri goda'/>
+          <CardDescription text={description} />
           <div className={styles.links}>
             <CardIcon href='https://github.com/Ldbelop/hotels-nextjs'>
               <GithubIcon width='30px' height='30px' fill='#C9B79E'/>
@@ -40,10 +44,9 @@ const Card = ({ title }: { title: string}) => {
               </div>
             </div>
             <section>
-              <TechBullet text='React'/>
-              <TechBullet text='Typescript'/>
+              {techToRender}
             </section>
-            <CardDescription text='Lorem ipsum dolor amet set the land is inhospitable and so we are, smaller text, lorem apsum dolor asemota sre sldkjfe kashiri goda'/>
+            <CardDescription text={description} />
           </div>
           <CardImg source={'/Book-it.jpg'} altText={'Aphex Img'} width={519} height={293}/>
       </section>

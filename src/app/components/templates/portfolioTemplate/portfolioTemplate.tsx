@@ -18,7 +18,7 @@ const portfolioTemplate = () => {
           <BulletFilter title={'Menu 1'}/>
           <BulletFilter title={'Menu 2'}/>
         </section>
-        <Card title='Hotels'/>
+        <Card title='Hotels' description='Final proyect of the Devtools Bootcamp, this webpage mimics the usage of a booking app, it&apos;s packed with server-side rendering, loading states and context management.' techArray={['NextJS', 'React', 'Typescript']}/>
         <SubSectionTitle title='Technical Skills'/>
         <section className={styles.techSection}>
           <Technology techName='Angular'>
@@ -46,7 +46,7 @@ const portfolioTemplate = () => {
           <BulletFilter title={'Menu 1'}/>
           <BulletFilter title={'Menu 2'}/>
         </section>
-        <Card title='Hotels'/>
+        <Card title='Hotels' description='Final proyect of the Devtools Bootcamp, this webpage mimics the usage of a booking app, it&apos;s packed with server-side rendering, loading states and context management.' techArray={['NextJS', 'React', 'Typescript']}/>
         <SubSectionTitle title='Technical Skills'/>
         <section className={styles.techSection}>
           <Technology techName='Angular'>
