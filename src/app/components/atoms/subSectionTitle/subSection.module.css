@@ -8,3 +8,10 @@
     width: 100%;
     padding-block-end: 10px;
 }
+
+@media screen and (min-width: 1280px) {
+    .title{
+        width: 270px;
+        text-align: start;
+    }
+}

@@ -1,0 +1,15 @@
+.text{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    margin-block-start: 15px;
+}
+
+@media screen and (min-width: 1280px) {
+    .text{
+        max-width: 410px;
+        font-size: 20px;
+        text-align: start;
+    }
+}

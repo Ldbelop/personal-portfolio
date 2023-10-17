@@ -1,8 +1,9 @@
+import { poppins } from '@/utils/fonts'
 import styles from './cardDescription.module.css'
 
-const CardDescription = () => {
+const CardDescription = ({ text }: { text: string }) => {
   return (
-    <div>CardDescription</div>
+    <p className={`${styles.text} ${poppins.className}`}>{text}</p>
   )
 }
 

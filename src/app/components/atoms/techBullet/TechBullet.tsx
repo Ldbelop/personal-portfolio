@@ -1,8 +1,9 @@
+import { poppins } from '@/utils/fonts'
 import styles from './techBullet.module.css'
 
-const TechBullet = () => {
+const TechBullet = ({ text }: { text: string }) => {
   return (
-    <div>TechBullet</div>
+    <div className={`${styles.bullet} ${poppins.className}`}>{text}</div>
   )
 }
 
