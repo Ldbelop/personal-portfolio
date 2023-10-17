@@ -9,6 +9,7 @@
   --bullet-icon-color: #C9B79E;
   --button-bg: #A58D6D;
   --button-contrast: #496A5A;
+  --bullet-inactive: #D1C2AE;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,6 +30,7 @@ body {
   height: 100%;
   min-height: 100%;
   overflow-x: hidden;
+  overflow-y: scroll;
   background-color: var(--bg-color);
 }
 

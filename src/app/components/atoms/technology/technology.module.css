@@ -1,0 +1,6 @@
+.text{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
