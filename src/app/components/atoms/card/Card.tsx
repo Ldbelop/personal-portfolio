@@ -7,7 +7,7 @@ import CardIcon from '../cardIcon'
 import { AttachmentIcon, GithubIcon } from '../../icons/icons'
 import { makeSlug } from '@/app/services/textService'
 
-const Card = ({ title, description, techArray }: { title: string, description: string, techArray: string[] }) => {
+const Card = ({ title, description, techArray, imgSrc, altTxt, githubHref, deployHref }: { title: string, description: string, techArray: string[], imgSrc: string, altTxt: string, githubHref: string, deployHref: string }) => {
   const techToRender: React.ReactNode = techArray.map((tech:string, index: number): React.ReactNode => {
     return <TechBullet key={`${makeSlug(tech)}${index}`} text={tech}/>
   })
@@ -15,17 +15,17 @@ const Card = ({ title, description, techArray }: { title: string, description: s
   return (
     <>
       <section className={`${styles.container} ${styles.mobile}`}>
-          <CardImg source={'/Book-it.jpg'} altText={'Aphex Img'} width={271} height={153}/>
+          <CardImg source={imgSrc} altText={altTxt} width={271} height={153}/>
           <CardTitle title={title} />
           <section>
             {techToRender}
           </section>
           <CardDescription text={description} />
           <div className={styles.links}>
-            <CardIcon href='https://github.com/Ldbelop/hotels-nextjs'>
+            <CardIcon href={githubHref}>
               <GithubIcon width='30px' height='30px' fill='#C9B79E'/>
             </CardIcon>
-            <CardIcon href='https://hotels-nextjs.vercel.app/'>
+            <CardIcon href={deployHref}>
               <AttachmentIcon width='30px' height='30px' fill='#C9B79E'/>
             </CardIcon>
           </div>
