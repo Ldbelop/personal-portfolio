@@ -47,7 +47,8 @@ const portfolioTemplate = () => {
           <BulletFilter title={'Menu 1'}/>
           <BulletFilter title={'Menu 2'}/>
         </section>
-        <Card title='Hotels' description='Final proyect of the Devtools Bootcamp, this webpage mimics the usage of a booking app, it&apos;s packed with server-side rendering, loading states and context management.' techArray={['NextJS', 'React', 'Typescript']}/>
+        <Card title='Hotels' description='Final proyect of the Devtools Bootcamp, this webpage mimics the usage of a booking app, it&apos;s packed with server-side rendering, loading states and context management.' techArray={['NextJS', 'React', 'Typescript']} imgSrc='/Book-it.jpg' altTxt='Book it webpage Screenshot' githubHref='https://github.com/Ldbelop/hotels-nextjs' deployHref='https://hotels-nextjs.vercel.app/' />
+        <Card title='Restobar724' description='The technological solution for managing a Restaurant or business. Whole application Frontend made by me;' techArray={['Angular', 'Typescript']} imgSrc='/restobar724.png' altTxt='Restobar724 webpage Screenshot' githubHref='/' deployHref='https://restobar724.com/store?idstore=48827'/>
         <SubSectionTitle title='Technical Skills'/>
         <section className={styles.techSection}>
           <Technology techName='Angular'>

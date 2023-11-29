@@ -35,10 +35,10 @@ const Card = ({ title, description, techArray, imgSrc, altTxt, githubHref, deplo
             <div className={styles.landscapeTitleContainer}>
               <CardTitle title={title} />
               <div className={styles.links}>
-                <CardIcon href='https://github.com/Ldbelop/hotels-nextjs'>
+                <CardIcon href={githubHref}>
                   <GithubIcon width='30px' height='30px' fill='#C9B79E'/>
                 </CardIcon>
-                <CardIcon href='https://hotels-nextjs.vercel.app/'>
+                <CardIcon href={deployHref}>
                   <AttachmentIcon width='30px' height='30px' fill='#C9B79E'/>
                 </CardIcon>
               </div>
@@ -48,7 +48,7 @@ const Card = ({ title, description, techArray, imgSrc, altTxt, githubHref, deplo
             </section>
             <CardDescription text={description} />
           </div>
-          <CardImg source={'/Book-it.jpg'} altText={'Aphex Img'} width={519} height={293}/>
+          <CardImg source={imgSrc} altText={altTxt} width={519} height={293}/>
       </section>
     </>
   )
